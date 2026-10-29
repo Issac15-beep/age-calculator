@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="age.css" />
+  </head>
+  <body>
+    <!-- Container -->
+
+    <div class="container">
+      <!-- Inputs -->
+
+      <div class="inputs">
+        <!-- Input for Day -->
+        <div class="input">
+          <h2 class="day">DAY</h2>
+          <input type="text" placeholder="DD" maxlength="2" inputmode="numeric"  id="day" required />
+
+          <!-- Error Message -->
+          <p class="error1">Must be a valid day</p>
+        </div>
+
+        <!-- Input for Month -->
+        <div class="input">
+          <h2 class="month">MONTH</h2>
+          <input type="text" placeholder="MM" maxlength="2" inputmode="numeric" id="month" required />
+
+          <!-- Error Message -->
+          <p class="error2">Must be a valid month</p>
+        </div>
+
+        <!-- Input for Year -->
+        <div class="input">
+          <h2 class="year">YEAR</h2>
+          <input type="text" placeholder="YYYY" maxlength="4" inputmode="numeric" id="year" required />
+
+          <!-- Error Message -->
+          <p class="error3">Must be in the past</p>
+        </div>
+      </div>
+
+      <!-- Middle Page -->
+      <div class="middle">
+        <!-- Line -->
+        <div class="line"></div>
+
+        <!-- Image -->
+        <button class="image">
+          <img src="./assets/images/icon-arrow.svg" alt="Arrow-Down" id="submitBtn" value="submit" />
+      </button>
+      </div>
+
+      <!-- Display -->
+      <div class="display">
+        <p><span class="years">--</span> year<span class="first">s</span></p>
+        <p><span class="months">--</span> month<span class="second">s</span></p>
+        <p><span class="days">--</span> day<span class="third">s</span></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
